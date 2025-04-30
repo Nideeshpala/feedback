@@ -4,7 +4,7 @@ import Feedback_page from './Feedback_page';
 import { loginContext } from './usercontext/Contextshare';
 import { BrowserRouter } from 'react-router-dom';
 
-// Mock feedbackapi
+
 jest.mock('./service/Allapi', () => ({
   feedbackapi: jest.fn(() => Promise.resolve({ status: 200, data: 'Feedback submitted successfully' }))
 }));
@@ -58,7 +58,7 @@ describe('Feedback_page Component', () => {
     renderWithContext(<Feedback_page />, { providerProps });
 
     const stars = screen.getAllByText('★');
-    fireEvent.click(stars[2]); // Click the third star (rating = 3)
+    fireEvent.click(stars[2]);
     expect(screen.getByText('Your Rating: 3')).toBeInTheDocument();
   });
 
@@ -70,7 +70,7 @@ describe('Feedback_page Component', () => {
       target: { value: 'There is a bug in the system' }
     });
 
-    fireEvent.click(screen.getAllByText('★')[4]); // 5-star rating
+    fireEvent.click(screen.getAllByText('★')[4]);
 
     fireEvent.click(screen.getByText('Submit'));
 
