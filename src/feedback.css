@@ -1,0 +1,15 @@
+.feedbackpage{
+    border: 1px solid black;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+.heading{
+margin-bottom:5% ;
+text-align: center;
+color: cornflowerblue;
+}
+
+.heading h6{
+    font-size: 45px;
+}

@@ -1,0 +1,79 @@
+.Name, .Mobile_Number, .Email, .Password, .Confirm_Password{
+    border-radius: 30px;
+    border-left: 0px;
+    margin-top: 5%;
+}
+
+.register{
+    border: #e9e9e9;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    margin-top: 5%;
+    margin-left: 15%;
+    border-radius: 25px;
+    background-color: rgb(241, 237, 237);
+    min-height: 650px;
+    width: 80%;
+}
+.heading {
+    color: rgb(86, 87, 87);
+    text-align: left;
+
+}
+.Btn_login {
+    border-radius: 30px;
+}
+
+.or {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.hr {
+    width: 40%;
+
+}
+
+.first {
+    background-image: url('https://i.postimg.cc/zDCRmjxL/building-5506466-1280.jpg');
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: rgb(241, 237, 237);
+    min-height: 650px;
+    width: 80%;
+    padding: 3%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Add this */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sentanse {
+    color: rgba(255, 255, 255, 0.734);
+    font-size: 30px;
+    text-align: left;
+    padding: 3%;
+}
+
+.third {
+    background-color: rgba(128, 128, 128, 0.497);
+    width: 100%;
+    height: 25%;
+    border-radius: 25px;
+    margin-top: 20px;
+    /* smaller margin */
+    margin-bottom: 10px;
+}
+.Second {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    width: 75%;
+}

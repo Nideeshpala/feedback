@@ -1,0 +1,102 @@
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background-color: #f7f9fb;
+
+    margin-top: 5%;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    rotate: 2deg;
+    transition: ease-in .5s;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .rating {
+    font-weight: bold;
+    color: #2ecc71;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .fa-star {
+    margin-left: 5px;
+    color: #2ecc71;
+  }
+  
+  .comment {
+    margin: 15px 0;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+  }
+  
+  .user-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+  }
+  
+  .user-id {
+    font-size: 0.8rem;
+    color: #999;
+  }
+
+  .options{
+    margin-right: auto;
+  }
+
+  .adminreplay{
+    overflow-y:auto;
+    height: 100px;
+  }
+
+  .filter, .date{
+    display: flex;
+   justify-content: space-evenly;
+  }
+
+ 
+  
+  /* Tablet screens */
+  @media (max-width: 768px) {
+    .testimonial-grid {
+      padding: 20px;
+      gap: 16px;
+    }
+  
+    .comment,
+    .user-name {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+      padding: 15px;
+    }
+  
+    .card {
+      padding: 16px;
+    }
+  }
+  
